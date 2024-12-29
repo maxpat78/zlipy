@@ -127,7 +127,6 @@ def gen_dynamic_trees(matches, b, freq_lit=None, freq_dist=None):
 # NOTE:
 # - la conclusione anticipata di un blocco compresso dovrebbe essere guidata da...?
 def compress(s, level=9, method=9, wbits=-15, memLevel=0, strategy=Z_DEFAULT_STRATEGY, zdict=None):
-    print(level, method, wbits, memLevel, strategy)
     """Comprime una stringa `s`. Hanno attualmente effetto `wbits` (se negativo,
     genera un bitstream raw, se positivo, aggiunge header e trailer di zlib)
     e `strategy` (Z_NO_COMPRESSION: non comprime; Z_FIXED: usa gli alberi di
